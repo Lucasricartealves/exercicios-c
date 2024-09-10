@@ -1,0 +1,63 @@
+#while - enquanto 
+#if - se
+# for - Para
+#Estrututura de repetição while
+
+valorParaIncrementarA = 1
+while valorParaIncrementarA <= 5:
+  print (valorParaIncrementarA)
+  valorParaIncrementarA += 1
+  
+  #Trabalhando com paradas 
+valorParaIncrementarB = 1
+while valorParaIncrementarB < 5:
+  print (valorParaIncrementarB)
+  if valorParaIncrementarB == 3:
+    break 
+  valorParaIncrementarB += 1
+
+#Continuando para próximas interação 
+valorParaIncrementarC = 0
+while valorParaIncrementarC < 5:
+  valorParaIncrementarC += 1
+  if valorParaIncrementarC == 3:
+    continue  
+  print(valorParaIncrementarC)
+
+#Loop infinito 
+luzEstaAcessa = True
+while luzEstaAcessa:
+  print("A luz está acessa") 
+  luzEstaAcessa = False
+
+#Estrutura de repetição for
+for _ in range(2):
+  print("Repetindo")
+
+valorX = 10
+for _ in range (3):
+  print(valorX)
+  valorX +=5
+
+
+#Criando funções simples
+def minha_acao():
+  print("Executando minha ação")
+
+minha_acao()
+minha_acao()
+
+
+#funções com parametros 
+#f - formatado
+#print () - print vazio é quebra de linha 
+
+def somar_dois_valores(valor_a, valor_b):
+  soma = valor_a + valor_b
+  print(f"primeiro valor indicado: {valor_a}")
+  print(f"segundo valor indicado: {valor_b}")
+  print(f"soma dos valores: {soma}")
+  print()
+
+somar_dois_valores(10, 10)
+somar_dois_valores(15, 25)
