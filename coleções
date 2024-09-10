@@ -1,0 +1,71 @@
+#Tabalhando com Arrays (listas)
+listaFrutas = ["maça", "banana", "limão"]
+print(listaFrutas)
+
+#Conceito de índice - base 0
+#acessando um elemento de uma lista 
+print(listaFrutas[2])
+
+#acessano o ultimo elemento de uma lista
+print(listaFrutas[-2])
+
+#ordenando uma lista, colocando a lista em ordem alfabetica
+listaFrutas.sort()
+print(listaFrutas)
+
+#loop em uma lista 
+#for - para 
+#in - em
+for umaFruta in listaFrutas:
+  print(umaFruta)
+
+#modificando um elemento e uma lista
+listaFrutas[0] = "melancia"
+print(listaFrutas)
+
+#adicionando elementos em uma lista
+listaFrutas.append("Pitaya")
+print(listaFrutas)
+listaFrutas.append("bucetinha")
+print(listaFrutas)
+
+#removendo elementos de uma lista
+listaFrutas.remove("Pitaya")
+print(listaFrutas)
+
+#medindo o tamanho de uma lista 
+print(len(listaFrutas))
+
+#verificando se uma lista esta vazia
+#if - se
+#else - senao
+if len(listaFrutas) == 0:
+  print("A lista está vazia")
+else:
+  print("A lista não está vazia")
+
+#verificando ocorrencias em uma lista
+print(listaFrutas.__contains__("mamão"))
+
+#trabalhando com conjuntos (Sets)
+#listas que nao aceitam dados duplicados e sem indices
+conjuntoVGAtuais = ["PS5", "Xbos Series", "Switch", "PS5"]
+print(conjuntoVGAtuais)
+
+conjuntoVGAtuais.sort()
+print(conjuntoVGAtuais)
+
+
+
+#frases
+Frase1 = "Queixam-se muitos de pouco dinheiro, outros de pouca sorte, alguns de pouca memória, nenhum de pouco juízo."
+
+Frase2 = "Queixam-se muitos de pouco dinheiro, outros de pouca sorte, alguns de pouca memória, nenhum de pouco juízo."
+
+Frase3 = "Talento é dom, é graça. E sucesso nada tem a ver com sorte, mas com determinação e trabalho."
+
+
+#listadosbiscoitosdasorte
+ConjuntoDeFrasesDaSorte = {"Queixam-se muitos de pouco dinheiro, outros de pouca sorte, alguns de pouca memória, nenhum de pouco juízo.", "Queixam-se muitos de pouco dinheiro, outros de pouca sorte, alguns de pouca memória, nenhum de pouco juízo.", "Talento é dom, é graça. E sucesso nada tem a ver com sorte, mas com determinação e trabalho."}
+
+print(ConjuntoDeFrasesDaSorte)
