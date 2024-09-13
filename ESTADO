@@ -1,0 +1,48 @@
+estado_capitais = { 
+"Acre" : "rio branco",
+"Alagoas" : "maceió",
+"Amapá" : "macapá",
+"Amazonas" : "manaus",
+"Bahia" : "salvador",
+"Ceará" : "fortaleza",
+"Distrito Federal" : "brasilia",
+"Espírito Santo" : "vitória",
+"Goiás" : "goiânia",
+"Maranhão" : "são luís",
+"Mato Grosso" : "cuiabá",
+"Mato Grosso do Sul" : "campo grande",
+"Minas Gerais" : "belo horizonte",
+"Pará" : "belém",
+"Paraíba" : "joão pessoa",
+"Paraná" : "curitiba",
+"Pernambuco" : "recife",
+"Piauí" : "teresina",
+"Rio de Janeiro" : "rio de janeiro",
+"Rio Grande do Norte" : "natal",
+"Rio Grande do Sul" : "porto alegre",
+"Rondônia" : "porto velho",
+"Roraima" : "boa vista",
+"Santa Catarina" : "florianópolis",
+"São Paulo" : "são paulo",
+"Sergipe" : "aracaju",
+"Tocantins" : "palmas"
+  
+}
+
+def imprimir_estados():
+  estados = estado_capitais.keys()
+  for estado in estados:
+    print(estado)
+
+imprimir_estados()
+def imprimir_capital(estado):
+  if estado_capitais.__contains__(estado):
+    print(estado_capitais[estado])
+  else:
+    print("capital nao encontrada")
+
+imprimir_capital("Tocantins")
+
+
+#Lucas Alves
+#Vinicius Alencar
